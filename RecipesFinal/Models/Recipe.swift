@@ -9,8 +9,8 @@ struct Recipe: Identifiable, Codable {
     var id: Int
     var title: String
     var rating: Int
-    var prepTime: Int   // In seconds.
-    var cookTime: Int   // In seconds.
+    var prepTime: Int   
+    var cookTime: Int   
     var servings: String
     var ingredients: String
     var directions: String
