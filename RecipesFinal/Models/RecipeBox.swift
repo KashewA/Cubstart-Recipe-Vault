@@ -76,7 +76,7 @@ class RecipeBox: ObservableObject {
 extension RecipeBox {
     func add(_ recipe: Recipe) -> Recipe.ID {
         var recipeToAdd = recipe
-        // Increment the recipe id.
+        // Increments ID in JSON data
         recipeToAdd.id = (allRecipes.map { $0.id }.max() ?? 0) + 1
         allRecipes.append(recipeToAdd)
         updateCollectionsIfNeeded()
