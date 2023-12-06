@@ -3,15 +3,8 @@
 //  RecipeVault
 //
 
-
-/// This file contains helper source code for the recipe data store.
-
 import SwiftUI
 
-/// Load file from the file system.
-///
-/// `load` expects a JSON file. Use the method to load the recipe data; for
-/// example: `DataStore(recipes: load("recipeData.json"))`.
 func load<T: Decodable>(_ filename: String) -> T {
     let data: Data
     
@@ -35,13 +28,8 @@ func load<T: Decodable>(_ filename: String) -> T {
     }
 }
 
-/// The in-memory image store that this sample uses.
-///
-/// A user of the app can add images. Instead of saving those images to the
-/// file, the sample uses an in-memory image store. This approach is okay
-/// for sample where data changes that a person makes are discarded when
-/// the app quits. However, you shouldn't use this approach in a real-world
-/// app.
+// User can add images.
+
 final class ImageStore {
     typealias _ImageDictionary = [String: Image]
     fileprivate var images: _ImageDictionary = [:]
@@ -77,9 +65,7 @@ final class ImageStore {
         return images.index(forKey: name)!
     }
 }
-/// Make RecipeBox from the default JSON file.
-///
-/// Provide a convenient initializer for previews
+
 extension RecipeBox {
     convenience init() {
         self.init(recipes: load("recipeData.json"))
