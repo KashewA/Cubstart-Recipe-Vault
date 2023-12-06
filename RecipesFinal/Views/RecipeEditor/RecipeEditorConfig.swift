@@ -15,13 +15,11 @@ struct RecipeEditorConfig {
         
         switch sidebarItem {
         case .favorites:
-            // Associate the recipe to the favorites collection.
+            // Adds Recipe to Favorites.
             recipe.isFavorite = true
         case .collection(let name):
-            // Associate the recipe to a custom collection.
             recipe.collections = [name]
         default:
-            // Nothing else to do.
             break
         }
         
