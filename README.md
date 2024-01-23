@@ -1,6 +1,6 @@
 # 🍲👩‍🍳 CubstartSwift - RecipeVault 🗝️📱
 
-# 🌟 Recipe Vault is a recipe organizer & wishlist app developed for iOS 17.0, crafted using the latest Xcode 15. This app presents a visually appealing logo that illustrates a vault, referencing the app’s safekeeping of recipes & culinary data.
+# 🌟 Recipe Vault is a recipe organizer & wishlist app developed for iOS 17.0, crafted using the latest Xcode 15. This app presents a visually appealing logo that illustrates a vault, referencing the app’s safekeeping of recipes & culinary data, with inspiration from Pinterest.
 
 # 🌟 Users can navigate through various pages within the Recipe Vault app, including the Home page, Wishlist page, Recipe page, Favorites page, and more to access a comprehensive range of features and functionalities. For example, the Home page greets users with Recipe Vault's app logo, the time, and features a daily highlighted recipe. 
 
